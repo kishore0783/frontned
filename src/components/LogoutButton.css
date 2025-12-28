@@ -1,0 +1,126 @@
+/* General Container */
+.logout-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between the bell icon and profile button */
+  padding-right: 20px;
+}
+
+/* Notification Icon */
+.notification-icon {
+  font-size: 20px;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.notification-icon:hover {
+  color: #007bff;
+}
+
+/* Profile Button */
+.profile-button {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between avatar and name */
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #f2f5f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Dropdown Wrapper */
+.dropdown-wrapper {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 220px; /* Same width as profile button */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+/* Dropdown Menu */
+.profile-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-dropdown li:hover {
+  background-color: #f5f5f5;
+  transform: translateX(5px);
+}
+
+/* Dropdown Icons */
+.dropdown-icon {
+  font-size: 16px;
+  color: #007bff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-dropdown li:hover .dropdown-icon {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Dropdown Divider */
+.dropdown-divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 5px 0;
+}
+
+/* Dropdown Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,95 @@
+/* Background Styling */
+.rentalpage-background {
+    background-color: #f7f9fc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.rentalpage-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Title Styling */
+.rentalpage-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Dynamic Quote Section */
+.rentalpage-quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    background: #eaf4fc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Car Details Styling */
+.rentalpage-car-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Car Text Styling */
+.rentalpage-car-text {
+    flex: 1;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Car Image Styling */
+.rentalpage-car-image {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fun Facts Section */
+.rentalpage-funfacts {
+    margin-top: 20px;
+    font-size: 16px;
+    background: #fcf8e3;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #f7e2a3;
+    color: #6c757d;
+}
+
+/* Button Styling */
+.rentalpage-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rentalpage-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

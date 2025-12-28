@@ -1,0 +1,217 @@
+/* Background Styling */
+.advancepayment-background {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.advancepayment-container {
+    background: #ffffff; /* Clean white container */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Title Styling */
+.advancepayment-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Dynamic Quote Styling */
+.advancepayment-quote {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Image Styling */
+.advancepayment-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Group Styling */
+.advancepayment-details, .advancepayment-security, .advancepayment-method {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label Styling */
+.advancepayment-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Styling */
+.advancepayment-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.advancepayment-input:hover {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.advancepayment-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.advancepayment-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.advancepayment-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.help-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/* Navigation Buttons Styling */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-around; /* Space between buttons */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 45%; /* Equal width for buttons */
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .nav-button {
+        width: 80%; /* Full width on smaller screens */
+        margin-bottom: 10px;
+    }
+}
+/* Timer Box Styling */
+.timer-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dialogue Modal Styling */
+.dialogue-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-content h3 {
+    color: #FF4C4C;
+    margin-bottom: 10px;
+}
+
+.redirect-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.redirect-button:hover {
+    background-color: #0056b3;
+}
+
+/* Container Updates */
+.advancepayment-container {
+    position: relative; /* Ensures timer stays inside container */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+

@@ -1,0 +1,980 @@
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Welcome Title */
+.welcome-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007BFF;
+    text-transform: uppercase;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.customer-name {
+    color: #007BFF; /* Same as welcome title */
+}
+
+/* Current Rentals Section */
+.current-rentals-section {
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Rental Box Container */
+.rental-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Rental Box */
+.rental-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rental-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.rental-box h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.rental-box p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Loyalty Section */
+.customer-feature-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.customer-feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.customer-feature-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Option Boxes */
+.customer-options-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.customer-option-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Initial soft shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;
+    cursor: pointer;
+    position: relative;
+}
+
+.customer-option-box:hover {
+    transform: translateY(-8px); /* Lift the box upwards */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    background: linear-gradient(to bottom, #ffffff, #f0f5ff); /* Slight gradient effect */
+}
+
+/* Underline Animation for Titles */
+.customer-option-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.customer-option-box h3:hover {
+    color: #0056b3; /* Change the title color on hover */
+}
+
+.customer-option-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #007BFF;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.customer-option-box:hover::after {
+    width: 80%; /* Underline expands */
+    left: 10%;
+}
+
+/* Link Styling */
+.option-link {
+    color: #007BFF;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.option-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Feature Boxes */
+.customer-feature-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-feature-box:hover {
+    transform: scale(1.03); /* Slightly enlarge the box */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background: #f9f9f9;
+}
+
+/* Feature Item Styling */
+.feature-item {
+    background: #fdfdfd;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift the item slightly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 123, 255, 1);
+    }
+}
+
+/* Rental Box Container */
+.rental-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Rental Box */
+.rental-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rental-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlight effect on hover */
+.rental-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.2);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.rental-box:hover::before {
+    left: 100%;
+}
+
+.rental-box h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007BFF;
+    position: relative;
+    z-index: 2;
+}
+
+.rental-box p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+    position: relative;
+    z-index: 2;
+}
+
+/* Return Button */
+.return-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.return-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+/* Section Container with Hover Effect */
+.customer-feature-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.customer-feature-box::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #007BFF;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+.customer-feature-box:hover::before {
+    width: 80%; /* Expand line width */
+    left: 10%; /* Start from center */
+}
+
+.customer-feature-box:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 255, 0.15); /* Light fog-like glow */
+    transform: translateY(-5px); /* Slight lift */
+}
+
+/* Fog Effect */
+.customer-feature-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.1), transparent);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.customer-feature-box:hover::after {
+    opacity: 1; /* Appear fog glow */
+}
+
+/* Title Styling */
+.customer-feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
+.customer-feature-box p {
+    font-size: 16px;
+    color: #555;
+    position: relative;
+    z-index: 2;
+}
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.customer-main-container {
+    padding-bottom: 60px; /* Space before footer */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0a1d3b;
+    color: #ffffff;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.footer-column {
+    margin: 10px 0;
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ffcc00;
+}
+
+/* Social Media Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Bottom Info */
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.blue-text {
+    text-align: center;
+    color: blue;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.no-rentals-box {
+    text-align: center;
+    background-color: #f0f4f8;
+    color: #555;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-size: 1.2em;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.rental-history-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.rental-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33% - 20px);
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rental-box h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.rental-box p {
+    margin: 5px 0;
+}
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.customer-background.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.customer-background {
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+/* Night Mode Toggle */
+.dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.customer-background.dark-mode .dark-mode-toggle {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px; /* Space between welcome section and filters */
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.welcome-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007BFF;
+    text-transform: uppercase;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.customer-name {
+    color: #007BFF;
+}
+
+.welcome-quote {
+    font-style: italic;
+    color: #777777;
+}
+
+/* Filters Section */
+.filter-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center align the whole section */
+    align-items: center; /* Vertically align all elements */
+    gap: 15px; /* Add spacing between elements */
+    margin: 20px auto; /* Margin for positioning below welcome */
+    padding: 10px 0;
+}
+
+.filter-container label {
+    font-weight: bold;
+    margin-right: 8px; /* Add spacing between label and input */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.filter-container input {
+    width: 180px; /* Fixed width for uniform appearance */
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.filter-container button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-wrap: wrap; /* Allow wrapping of elements */
+        justify-content: flex-start; /* Align items to the left */
+    }
+
+    .filter-container label {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .filter-container input {
+        margin-bottom: 10px;
+    }
+
+    .filter-container button {
+        margin-top: 10px;
+    }
+}
+
+/* Rental History Toggle */
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 10px;
+}
+
+.rental-history-container {
+    margin-top: 15px;
+}
+
+/* Customer Support Chat */
+.customer-support-chat {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customer-background.dark-mode .customer-support-chat {
+    background-color: #333333;
+    border-color: #444444;
+}
+
+.chat-widget {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 15px;
+    }
+
+    .dark-mode-toggle {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+.customer-feedback {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    margin-top: 10px;
+    color: green;
+    font-size: 14px;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+/* Floating Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 114, 255, 0.7);
+    animation: rotateGlow 3s infinite;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 114, 255, 1);
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Chat Icon */
+.chat-icon {
+    font-size: 36px;
+    color: white;
+    animation: iconPulse 1.5s infinite;
+}
+
+/* Chat Box */
+.chat-box {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 380px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    overflow: hidden;
+    animation: slideIn 0.3s ease;
+}
+
+.chat-box-header {
+    background: #0072ff;
+    color: white;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chat-box-header .close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-widget {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Keyframes for Button Glow Rotation */
+@keyframes rotateGlow {
+    0%, 100% {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 114, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 114, 255, 1);
+    }
+}
+
+/* Icon Pulsing Effect */
+@keyframes iconPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Chat Box Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Wishlist Section */
+.wishlist-section {
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 10px;
+}
+
+.wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    max-height: 0; /* Initially collapsed */
+    opacity: 0;
+}
+
+.wishlist-container.expanded {
+    max-height: 500px; /* Adjust based on expected content */
+    opacity: 1;
+}
+
+.wishlist-container.collapsed {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* Individual Wishlist Box */
+.wishlist-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33% - 20px);
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wishlist-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Car Image Styling */
+.car-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.wishlist-box h4 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.wishlist-box p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* No Wishlist Styling */
+.no-wishlist-box {
+    text-align: center;
+    background-color: #f0f4f8;
+    color: #555;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-size: 1.2em;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.customer-background {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.permission-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.permission-popup {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.permission-popup h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.permission-popup button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.permission-popup button:hover {
+    background-color: #007BFF;
+    color: white;
+}

@@ -1,0 +1,351 @@
+/* Background Styling */
+.addlocation-background {
+    background: linear-gradient(to bottom right, #f7f9fc, #eaf2ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Container Styling */
+.addlocation-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    animation: slideIn 0.5s ease;
+}
+
+/* Input and Button Styling */
+.addlocation-input-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 15px;
+}
+
+.addlocation-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+}
+
+.addlocation-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.addlocation-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.addlocation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.addlocation-modal-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    animation: zoomIn 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.car-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.car-item {
+    padding: 10px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.car-item:hover {
+    background-color: #e0e0e0;
+}
+
+.addlocation-cancel-button {
+    padding: 10px 20px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.addlocation-cancel-button:hover {
+    transform: scale(1.05);
+    background-color: #cc0000;
+}
+/* General Background */
+.addlocation-background {
+    background: linear-gradient(to bottom right, #f7f9fc, #eaf2ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Container Styling */
+.addlocation-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    animation: slideIn 0.5s ease;
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Title and Subtitle */
+.addlocation-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.addlocation-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input Container */
+.addlocation-input-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 15px;
+}
+
+/* Input Styling */
+.addlocation-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    background: transparent;
+}
+
+.addlocation-input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.addlocation-input-focus-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    z-index: 0;
+    pointer-events: none;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.addlocation-input:focus + .addlocation-input-focus-effect {
+    transform: scale(1.05);
+    opacity: 0.7;
+    border-color: #007BFF;
+}
+
+/* Button Styling */
+.addlocation-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.addlocation-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Map Container Styling */
+.map-container {
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styling */
+.addlocation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.addlocation-modal-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    animation: zoomIn 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal List Styling */
+.car-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.car-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.car-item:hover {
+    background-color: #f0f0f0;
+}
+
+.car-item input {
+    margin-right: 10px;
+}
+
+/* Modal Buttons */
+.addlocation-cancel-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF4D4D;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.addlocation-cancel-button:hover {
+    background-color: #CC0000;
+    transform: scale(1.05);
+}
+
+/* Back Link Styling */
+.addlocation-back-link-container {
+    margin-top: 20px;
+}
+
+.addlocation-back-link {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.addlocation-back-link:hover {
+    color: #0056b3;
+}
+
+/* Success and Error Messages */
+.success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .addlocation-container {
+        width: 95%;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+}

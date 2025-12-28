@@ -1,0 +1,339 @@
+/* Background Styling */
+.carpage-background {
+    background-color: #f7f9fc; /* Light grey-blue background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Container Styling */
+.carpage-container {
+    background: rgba(255, 255, 255, 0.95); /* Subtle white container */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Title and Subtitle Styling */
+.carpage-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.carpage-subtitle {
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Car Grid Layout */
+.carpage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic layout */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Car Box Styling */
+.carpage-box {
+    background: linear-gradient(to bottom, #ffffff, #e6f2ff);
+    border: 2px solid #ddd;
+    border-radius: 35px;
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carpage-box:hover:not(.booked) {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Booked Car Styling */
+/* Booked Car Styling */
+.carpage-box.booked {
+    cursor: not-allowed;
+    background: #e0e0e0; /* Light grey for unavailable cars */
+    border: 2px solid #b0b0b0; /* Grey border */
+    color: #666; /* Dark grey text */
+    box-shadow: none;
+}
+
+.carpage-box.booked h3,
+.carpage-box.booked p {
+    color: #666; /* Dark grey text for booked cars */
+}
+
+/* Booked Status Styling */
+.booked-status {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666; /* Dark grey for booked status */
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Clickable Text Styling */
+.carpage-click-text {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.carpage-click-text:hover {
+    color: #0056b3;
+}
+
+/* Zoomed View Styling */
+.carpage-zoomed-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.carpage-zoomed-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    animation: zoomIn 0.3s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Zoom Animations */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Back Button Styling */
+.carpage-zoom-links .back-button {
+    background-color: #FF4C4C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carpage-zoom-links .back-button:hover {
+    background-color: #d11d1d;
+    transform: scale(1.1);
+}
+
+/* Proceed Button Styling */
+.carpage-zoom-links .proceed-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carpage-zoom-links .proceed-button[disabled] {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.carpage-zoom-links .proceed-button:hover:not([disabled]) {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Countdown Dialog */
+.countdown-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.countdown-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carpage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carpage-zoomed-content {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carpage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carpage-zoomed-content {
+        max-width: 400px;
+    }
+}
+/* Back to Customer Page Button */
+.back-to-customer-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back to Customer Button Styling */
+.back-to-customer-button {
+    display: block;
+    margin: 30px auto 0; /* Centered and at the bottom of the container */
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-customer-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.back-to-customer-button:active {
+    background-color: #004099; /* Even darker blue on click */
+    transform: scale(1);
+}
+.wishlist-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+    margin-top: 10px;
+}
+
+.wishlist-added {
+    color: red;
+}
+
+.wishlist-icon:hover {
+    transform: scale(1.2);
+}
+
+.carpage-box {
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carpage-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Updated Car Grid Layout */
+.carpage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible layout */
+    gap: 30px; /* Increased gap to avoid overlapping */
+    justify-items: stretch; /* Ensure boxes stretch uniformly */
+    align-items: stretch; /* Align items uniformly */
+    margin-top: 20px; /* Add some spacing above the grid */
+}
+
+/* Updated Car Box Styling */
+.carpage-box {
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure contents are spaced evenly */
+    box-sizing: border-box; /* Include padding and borders in box size */
+}
+
+.carpage-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure consistent spacing inside boxes */
+.carpage-box > * {
+    margin: 5px 0; /* Uniform margin for child elements */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carpage-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .carpage-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}

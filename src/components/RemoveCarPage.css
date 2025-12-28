@@ -1,0 +1,258 @@
+/* Background Styling */
+.removepage-background {
+    background-color: #f7f9fc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Container Styling */
+.removepage-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Title Styling */
+.removepage-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Car Grid Layout */
+.removepage-car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+}
+
+/* Car Box Styling */
+.removepage-car-box {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 60px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.removepage-car-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove Button Styling */
+.removepage-remove-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #FF4C4C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.removepage-remove-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+/* Zoomed View Styling */
+.removepage-zoomed-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.removepage-zoomed-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+    animation: zoomIn 0.3s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Back Button Styling */
+.removepage-back-button,
+.removepage-remove-confirm-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.removepage-back-button {
+    background-color: #007BFF;
+}
+
+.removepage-back-button:hover {
+    background-color: #0056b3;
+}
+
+.removepage-remove-confirm-button {
+    background-color: #FF4C4C;
+}
+
+.removepage-remove-confirm-button:hover {
+    background-color: #cc0000;
+}
+
+/* Back Link Styling */
+.removepage-back-link {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.removepage-back-link:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .removepage-car-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Background Styling */
+.removepage-background {
+    background-color: #f7f9fc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Container Styling */
+.removepage-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Car Grid Layout */
+.removepage-car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+}
+
+/* Zoomed View Styling */
+.removepage-zoomed-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.removepage-zoomed-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+    animation: zoomIn 0.3s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Zoom Out Animation */
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+
+.zoom-out {
+    animation: zoomOut 0.3s ease-in-out forwards;
+}
+
+/* Countdown Dialog Styling */
+.removepage-countdown-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.removepage-dialog-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #333;
+}

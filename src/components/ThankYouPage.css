@@ -1,0 +1,156 @@
+/* Background Styling */
+.thankyoupage-background {
+    background: radial-gradient(circle, #e0f7fa, #ffffff); /* Soft radial gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Container Styling */
+.thankyoupage-container {
+    background: rgba(255, 255, 255, 0.95); /* Subtle white background */
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Title Styling */
+.thankyoupage-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a73e8;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Message Styling */
+.thankyoupage-message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Image Section */
+.thankyoupage-illustration {
+    margin: 20px 0;
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+.thankyoupage-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.thankyoupage-image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Encouragement Section */
+.thankyoupage-encouragement {
+    font-size: 18px;
+    font-style: italic;
+    color: #6c757d;
+    background: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b2ebf2;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Styling */
+.thankyoupage-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.thankyoupage-button:hover {
+    background-color: #0f5cbf;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.thankyoupage-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.thankyoupage-footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.thankyoupage-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thankyoupage-container {
+        padding: 20px;
+    }
+
+    .thankyoupage-title {
+        font-size: 28px;
+    }
+
+    .thankyoupage-message {
+        font-size: 14px;
+    }
+
+    .thankyoupage-encouragement {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,71 @@
+/* Namespaced Styling for ReturnCarPage */
+.returncar-background {
+    background: linear-gradient(to bottom right, #e8f0fe, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.returncar-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.returncar-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rental-details {
+    background: rgba(240, 240, 240, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.rental-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.returncar-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.returncar-confirm-button {
+    background-color: #007BFF;
+    color: white;
+    margin-top: 10px;
+}
+
+.returncar-confirm-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.returncar-no-cars-message {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+    font-style: italic;
+}

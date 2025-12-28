@@ -1,0 +1,181 @@
+/* Background Styling */
+.editcar-background {
+    background: linear-gradient(to bottom, #e0eafc, #cfdef3); /* Subtle gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.editcar-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1200px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title Styling */
+.editcar-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.editcar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Car Box Styling */
+.editcar-box {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.editcar-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Edit Button Styling */
+.editcar-edit-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.editcar-edit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styling */
+.editcar-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.editcar-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    animation: zoomIn 0.3s ease-in-out;
+}
+
+/* Input Styling */
+.editcar-label {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.editcar-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Modal Buttons */
+.editcar-modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.editcar-save-button, .editcar-cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.editcar-save-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.editcar-cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.editcar-save-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.editcar-cancel-button:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+/* Back Link Styling */
+.editcar-back-link-container {
+    margin-top: 20px;
+}
+
+.editcar-back-link {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.editcar-back-link:hover {
+    color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
